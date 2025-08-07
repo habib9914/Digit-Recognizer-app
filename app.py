@@ -7,7 +7,7 @@ from tensorflow.keras.utils import load_img, img_to_array
 model = load_model("digit_recognizer_24x24.h5")
 
 # Page title
-st.set_page_config(page_title="Digit Recognizer", layout="centered")
+st.set_page_config(page_title="Habib Digit Recognizer", layout="centered")
 st.title("🧠 Handwritten Digit Recognizer")
 st.write("Upload a 24x24 grayscale image of a digit (0–8). Black digit on white background.")
 
@@ -27,4 +27,5 @@ if uploaded_file is not None:
     predicted_digit = np.argmax(prediction)
 
     st.success(f"🔢 Predicted Digit: **{predicted_digit}**")
+
 
